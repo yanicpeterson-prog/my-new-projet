@@ -34,63 +34,54 @@
 <meta name="twitter:title" content="Coupon Neosurf - Vérification de solde disponible">
 <meta name="twitter:description" content="Vérifiez votre Ticket Neosurf et le statut de vos Ticket.">
 <meta name="twitter:image" content="https://neosurf.pro/assets/logo.png">
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Ticket Neosurf",
-  "url": "https://neosurf.pro/",
-  "description": "Vérifiez rapidement et en toute sécurité votre ticket Neosurf grâce à notre service en ligne.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Ticket Neosurf",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://neosurf.pro/assets/logo.png"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://neosurf.pro/#website",
+      "url": "https://neosurf.pro/",
+      "name": "Ticket Neosurf",
+      "description": "Vérifiez rapidement et en toute sécurité votre ticket Neosurf grâce à notre service en ligne.",
+      "inLanguage": "fr"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://neosurf.pro/#organization",
+      "name": "Ticket Neosurf",
+      "url": "https://neosurf.pro/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://neosurf.pro/assets/logo.png"
+      },
+      "image": "https://neosurf.pro/assets/logo.png"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://neosurf.pro/#service",
+      "name": "Vérification de Ticket Neosurf",
+      "description": "Service de vérification de Ticket Neosurf en ligne.",
+      "provider": {
+        "@id": "https://neosurf.pro/#organization"
+      },
+      "serviceType": "Vérification de Ticket Neosurf",
+      "url": "https://neosurf.pro/",
+      "areaServed": [
+        { "@type": "Country", "name": "Bénin" },
+        { "@type": "Country", "name": "Burkina Faso" },
+        { "@type": "Country", "name": "Mali" },
+        { "@type": "Country", "name": "Ghana" },
+        { "@type": "Country", "name": "Sénégal" },
+        { "@type": "Country", "name": "Cameroun" },
+        { "@type": "Country", "name": "République démocratique du Congo" },
+        { "@type": "Country", "name": "Togo" },
+        { "@type": "Country", "name": "Canada" },
+        { "@type": "Country", "name": "Belgique" },
+        { "@type": "Country", "name": "France" },
+        { "@type": "Country", "name": "Maroc" }
+      ]
     }
-  }
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Ticket Neosurf",
-  "url": "https://neosurf.pro/",
-  "logo": {
-  "@type": "ImageObject",
-  "url": "https://neosurf.pro/assets/logo.png"
-},
-  "image": "https://neosurf.pro/assets/logo.png"
-}
-</script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Vérification de Ticket Neosurf",
-  "description": "Service de Vérification de Ticket Neosurf en ligne.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Ticket Neosurf"
-  },
-  "serviceType": "Vérification de Ticket Neosurf",
-  "url": "https://neosurf.pro/",
-  "areaServed": [
-    { "@type": "Country", "name": "Bénin" },
-    { "@type": "Country", "name": "Burkina Faso" },
-    { "@type": "Country", "name": "Mali" },
-    { "@type": "Country", "name": "Ghana" },
-    { "@type": "Country", "name": "Sénégal" },
-    { "@type": "Country", "name": "Cameroun" },
-    { "@type": "Country", "name": "République démocratique du Congo" },
-    { "@type": "Country", "name": "Togo" },
-    { "@type": "Country", "name": "Canada" },
-    { "@type": "Country", "name": "Belgique" },
-    { "@type": "Country", "name": "France" },
-    { "@type": "Country", "name": "Maroc" }
   ]
 }
 </script>
