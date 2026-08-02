@@ -65,16 +65,33 @@ if (!verificationForm) {
 
         }
 
-        // Vérification du captcha
+       async function verifierTurnstile() {
 
-        const captcha = grecaptcha.getResponse();
+    const token = turnstile.getResponse();
 
-        if (captcha.length === 0) {
+    if (!token) {
+        alert("Veuillez valider le captcha.");
+        return false;
+    }
 
-            result.innerHTML = "Veuillez confirmer le captcha.";
-            result.className = "error";
-            return;
+    const response = await fetch("turnstile-validator.yanicpeterson.workers.dev",{
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            token: token
+        })
+    });
 
+    const result = await response.json();
+
+    if (!result.success) {
+        alert("Validation captcha échouée.");
+        return false;
+    }
+
+    return true;
         }
 
         // Envoi EmailJS
