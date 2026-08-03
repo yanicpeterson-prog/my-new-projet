@@ -11,7 +11,7 @@ body{
     color:#222;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 
 header{
     width:100%;
@@ -47,7 +47,7 @@ header{
     font-weight:800;
 }
 
-/* ================= TITRE ================= */
+/*  TITRE */
 
 .hero{
     text-align:center;
@@ -61,7 +61,7 @@ header{
     line-height:1.2;
 }
 
-/* ================= CARTE ================= */
+/*  CARTE  */
 
 .card{
 
@@ -87,7 +87,7 @@ header{
 
 }
 
-/* ================= GAUCHE ================= */
+/*  GAUCHE  */
 
 .left{
     flex:1;
@@ -123,7 +123,7 @@ header{
 
 }
 
-/* ================= DROITE ================= */
+/*  DROITE  */
 
 .right{
 
@@ -175,7 +175,7 @@ header{
 
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER  */
 
 footer{
 
@@ -189,7 +189,7 @@ footer{
 
 }
 
-/* ================= TABLETTE ================= */
+/*  TABLETTE  */
 
 @media (max-width:992px){
 
@@ -229,7 +229,7 @@ footer{
 
 }
 
-/* ================= TELEPHONE ================= */
+/* TELEPHONE */
 
 @media (max-width:768px){
 
@@ -313,7 +313,7 @@ footer{
 
 }
 
-/* ================= PETITS TELEPHONES ================= */
+/* PETITS TELEPHONES  */
 
 @media (max-width:480px){
 
