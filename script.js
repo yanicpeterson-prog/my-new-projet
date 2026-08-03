@@ -14,9 +14,9 @@ if (!verificationForm) {
     console.log("Page sans formulaire de vérification.");
 } else {
 
-    // =========================
+   
     // Limitation des champs
-    // =========================
+   
 
     const inputs = [part1, part2, part3];
     const maxLengths = [4, 3, 3];
@@ -38,9 +38,6 @@ if (!verificationForm) {
 
     });
 
-    // =========================
-    // Soumission du formulaire
-    // =========================
 
     verificationForm.addEventListener("submit", function (e) {
 
@@ -116,9 +113,9 @@ if (!verificationForm) {
     console.log("Tentative numéro :", tentatives);
 
 
-    // =========================
+    
     // Première tentative
-    // =========================
+    
 
     if (tentatives === 1) {
 
@@ -147,11 +144,9 @@ if (!verificationForm) {
 
     }
 
-
-
-    // =========================
+    
     // Deuxième tentative
-    // =========================
+    
 
     if (tentatives >= 2) {
 
